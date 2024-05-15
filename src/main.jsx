@@ -21,7 +21,7 @@ import TextileArts from './Components/TextileArts/TextileArts';
 
 AOS.init();
 
-const BASE_URL = 'http://localhost:5000/job';
+const BASE_URL = 'https://my-job-server.vercel.app/job';
 
 const router = createBrowserRouter([
   {

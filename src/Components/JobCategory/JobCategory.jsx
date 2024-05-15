@@ -11,7 +11,7 @@ const JobCategory = () => {
   useEffect(() => {
     // Fetch data from the database link
     axios
-      .get('http://localhost:5000/job')
+      .get('https://my-job-server.vercel.app/job')
       .then(response => {
         // Set the fetched data to the state
         setJobs(response.data);

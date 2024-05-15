@@ -7,13 +7,13 @@ import { getAuth } from 'firebase/auth';
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyA2GcTkhE5IBXXDIISlRjTbSaU5W3SbKrA",
-  authDomain: "art-and-craft-client-project.firebaseapp.com",
-  projectId: "art-and-craft-client-project",
-  storageBucket: "art-and-craft-client-project.appspot.com",
-  messagingSenderId: "924020184624",
-  appId: "1:924020184624:web:8b4e6667fe92242805fff5",
-  measurementId: "G-44YZH04KS9"
+  apiKey: 'AIzaSyB3FjiVsgVcBxoI9qNX75Ggydq9mGYWsFI',
+  authDomain: 'job-marketplace-b2301.firebaseapp.com',
+  projectId: 'job-marketplace-b2301',
+  storageBucket: 'job-marketplace-b2301.appspot.com',
+  messagingSenderId: '7014191575',
+  appId: '1:7014191575:web:c65152693dd230bca87b92',
+  measurementId: 'G-9TKP6K3GJJ',
 };
 
 // Initialize Firebase

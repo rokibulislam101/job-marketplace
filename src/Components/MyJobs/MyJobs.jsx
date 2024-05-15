@@ -11,7 +11,7 @@ const MyJobs = ({ selfJob }) => {
 
   useEffect(() => {
     if (currentUser?.email) {
-      fetch(`http://localhost:5000/jobs/${currentUser.email}`)
+      fetch(`https://my-job-server.vercel.app/jobs/${currentUser.email}`)
         .then(res => res.json())
         .then(data => {
           setUserSelfJobs(data);
@@ -32,18 +32,14 @@ const MyJobs = ({ selfJob }) => {
       cancelButtonText: 'No, cancel!',
     }).then(result => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/job/${id}`, {
+        fetch(`https://my-job-server.vercel.app/job/${id}`, {
           method: 'DELETE',
         })
           .then(res => res.json())
           .then(data => {
             if (data.deletedCount > 0) {
               setRefetch(!refetch); // Trigger refetching
-              Swal.fire(
-                'Deleted!',
-                'Your Job has been deleted.',
-                'success'
-              );
+              Swal.fire('Deleted!', 'Your Job has been deleted.', 'success');
             } else {
               Swal.fire('Error!', 'Deletion failed.', 'error');
             }

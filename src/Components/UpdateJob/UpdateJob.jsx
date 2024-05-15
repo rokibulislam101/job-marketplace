@@ -46,7 +46,7 @@ const UpdateJob = () => {
     console.log(updatedJob);
 
     //send data to the server
-    fetch(`http://localhost:5000/job/${_id}`, {
+    fetch(`https://my-job-server.vercel.app/job/${_id}`, {
       method: 'PUT',
       headers: {
         'content-type': 'application/json',
@@ -74,7 +74,9 @@ const UpdateJob = () => {
       </Helmet>
       <div className="mt-[100px] justify-center bg-green-100">
         <div className="text-4xl lg:text-6xl font-bold p-2 lg:p-10 bg-green-500 text-white mb-20 h-[300px] flex justify-center items-center">
-          <h2 className="animate__animated animate__fadeInLeft">Update A Job</h2>
+          <h2 className="animate__animated animate__fadeInLeft">
+            Update A Job
+          </h2>
         </div>
         <form className="p-10" onSubmit={handleUpdateJob}>
           <div className="md:flex gap-4">
@@ -213,4 +215,3 @@ const UpdateJob = () => {
 };
 
 export default UpdateJob;
-

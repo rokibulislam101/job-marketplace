@@ -38,7 +38,7 @@ const AddJob = () => {
     };
 
     // Send data to the server to add the new craft item
-    fetch('http://localhost:5000/job', {
+    fetch('https://my-job-server.vercel.app/job', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
