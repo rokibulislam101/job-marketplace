@@ -5,6 +5,6 @@ Github Link - https://github.com/Porgramming-Hero-web-course/b9a11-client-side-r
 
 **Features- Responsive Mobile or Laptop. User Registration. Job Category. Search & Filter. Admin Control Panel. Analytics & Reports.
 
-** Features--
+** More Features--
 
 -- https://tailwindcss.com/docs/guides/vite -- https://daisyui.com/docs/themes/ -- https://www.npmjs.com/package/react-toastify -- https://github.com/michalsnik/aos -- https://react-icons.github.io/react-icons/ -- https://swiperjs.com/
